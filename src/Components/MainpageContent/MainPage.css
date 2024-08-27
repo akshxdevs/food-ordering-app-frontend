@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@200..1000&display=swap');
+
+body, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif; /* Use the imported font */
+}
+
+/* Container for the background image */
+.hole-container {
+    background-image: url('../../assets/pngtree-variety-of-indian-food-in-front-of-a-dark-wooden-table-image_2930880.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 0px 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+.main-header {
+    padding: 0px 175px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-the-app {
+    display: flex;
+    align-items: center;
+    color: rgb(203, 208, 213);
+}
+
+.header-nav {
+    display: flex;
+    gap: 45px;
+    font-size: 18px;
+    color: rgb(203, 208, 213);
+}
+
+.header-nav h4 {
+    cursor: pointer;
+}
+
+/* Title and search bar styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center; /* Center text content */
+    padding: 40px 20px; /* Add padding for better spacing */
+}
+
+.title {
+    margin: 0;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.des {
+    margin: 0;
+    font-size: 30px;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    font-size: 19px;
+    flex-grow: 1;
+    padding: 5px 20px;
+}
+
+/* Slider styling */
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(234, 230, 230, 0.871) ;
+    border-right: 0.5px dotted rgba(234, 230, 230, 0.871);
+    border-left: 0.5px double rgba(234, 230, 230, 0.871); 
+    box-shadow: 0 4px 8px rgba(234, 230, 230, 0.871);
+
+}
+
+.swiper-wrapper {
+    display: flex; /* Ensure the slides are properly aligned */
+}
+
+.swiper-slide {
+    text-align: center; /* Center the content within each slide */
+}
+
+.swiper-slide img {
+    size: 10px;
+    border-radius: 200px;
+    max-width: 100px; /* Maximum width */
+    max-height: 100px; /* Maximum height */
+    width: 100%; /* Allows image to scale down */
+    height: auto; 
+    object-fit: cover; /* Ensure images are properly contained */
+}
+
+.swiper-slide h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    padding: 210px 0px;
+    left: 81%;
+    transform: translateX(-50%); 
+    z-index: 10; 
+}
+.swiper-button-next {
+    position: absolute;
+    right: 13%;
+    padding: 210px 0px;
+    transform: translateX(-50%); 
+    z-index: 10; 
+  }
+  
+  @media (max-width: 1024px) {
+    .swiper-button-prev {
+        right: 12%;
+    } 
+    .swiper-button-next {
+        left: 80%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-button-prev{
+
+    } 
+    .swiper-button-next {
+        left: 75%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-button-prev {
+
+    }
+    .swiper-button-next {
+        left: 70%; 
+    }
+  }
+  
+
+.slider-title {
+    color: #000;
+    font-weight: bolder;
+    padding: 10px 50px;
+}
+.slider-back{
+    padding: 0px ;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px #ffffffa1 solid;
+    width: 80%;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* overflow: hidden; */
+}
