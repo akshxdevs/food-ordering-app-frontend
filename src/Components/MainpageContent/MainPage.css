@@ -3,7 +3,7 @@
 body, h4, h5 {
     margin: 0;
     padding: 0;
-    font-family: 'Cairo', sans-serif; /* Use the imported font */
+    font-family: 'Cairo', sans-serif; 
 }
 
 /* Container for the background image */
@@ -51,8 +51,8 @@ body, h4, h5 {
     align-items: center;
     justify-content: center;
     color: #fff;
-    text-align: center; /* Center text content */
-    padding: 40px 20px; /* Add padding for better spacing */
+    text-align: center; 
+    padding: 40px 20px;
 }
 
 .title {
@@ -98,21 +98,21 @@ body, h4, h5 {
 }
 
 .swiper-wrapper {
-    display: flex; /* Ensure the slides are properly aligned */
+    display: flex; 
 }
 
 .swiper-slide {
-    text-align: center; /* Center the content within each slide */
+    text-align: center; 
 }
 
 .swiper-slide img {
     size: 10px;
     border-radius: 200px;
-    max-width: 100px; /* Maximum width */
-    max-height: 100px; /* Maximum height */
-    width: 100%; /* Allows image to scale down */
+    max-width: 100px;
+    max-height: 100px; 
+    width: 100%; 
     height: auto; 
-    object-fit: cover; /* Ensure images are properly contained */
+    object-fit: cover; 
 }
 
 .swiper-slide h6 {
@@ -178,8 +178,4 @@ body, h4, h5 {
     border: 2px #ffffffa1 solid;
     width: 80%;
     margin: 0 auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* overflow: hidden; */
 }
