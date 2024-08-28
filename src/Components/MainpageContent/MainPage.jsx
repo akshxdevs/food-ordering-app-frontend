@@ -11,9 +11,7 @@ export const MainPage = () => {
         <MainHeader />
         <TitleandSearchbar />
       </div>
-      <div>
-        <UserOption />
-      </div>
+      <UserOption />
       <FoodSlider />
     </div>
   );

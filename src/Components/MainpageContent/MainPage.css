@@ -55,7 +55,7 @@ body, h4, h5 {
     padding: 40px 20px;
 }
 
-.title {
+.main-title {
     margin: 0;
     font-size: 70px;
     padding: 20px;
@@ -125,22 +125,22 @@ body, h4, h5 {
 
 .swiper-button-prev {
     position: absolute;
-    padding: 210px 0px;
+    padding: 560px 0px;
     left: 81%;
     transform: translateX(-50%); 
-    z-index: 10; 
+    z-index: 10;
 }
 .swiper-button-next {
     position: absolute;
     right: 13%;
-    padding: 210px 0px;
+    padding: 560px 0px;
     transform: translateX(-50%); 
     z-index: 10; 
   }
   
   @media (max-width: 1024px) {
     .swiper-button-prev {
-        right: 12%;
+        right: 13%;
     } 
     .swiper-button-next {
         left: 80%; 
@@ -149,7 +149,7 @@ body, h4, h5 {
   
   @media (max-width: 768px) {
     .swiper-button-prev{
-
+        right: 80%;
     } 
     .swiper-button-next {
         left: 75%; 
@@ -158,7 +158,7 @@ body, h4, h5 {
   
   @media (max-width: 480px) {
     .swiper-button-prev {
-
+        right: 40%;
     }
     .swiper-button-next {
         left: 70%; 
@@ -178,4 +178,55 @@ body, h4, h5 {
     border: 2px #ffffffa1 solid;
     width: 80%;
     margin: 0 auto;
+}
+
+/* card css */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 80px 0px 0px;
+}
+.card-container > div {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 0px 118px 0px 0px;
+    width: 250px; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-container > div:hover {
+    transform: scale(1.05); 
+}
+
+.card-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%; 
+    height: auto;
+    
+}
+
+.title {
+    font-size: 1.2em; 
+    font-weight: bold;
+    padding: 0px 15px; 
+    color: #333;
+
+}
+
+.description {
+    display: flex;
+    padding: 0px 15px 10px;
+    font-size: 0.9em; 
+    color: #666; 
+}
+
+.useroption-wrapper{
+    padding: 0px 150px;
+    
 }
