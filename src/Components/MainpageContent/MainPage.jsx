@@ -1,8 +1,10 @@
+import './MainPage.css';
+import { FoodDisplay } from './FoodDisplay';
 import { FoodSlider } from './FoodSlider';
 import { MainHeader } from './MainHeader';
-import './MainPage.css';
 import { TitleandSearchbar } from './TitleandSearchbar';
 import { UserOption } from './UserOption';
+import { WebDetails } from './WebDetails';
 
 export const MainPage = () => {
   return (
@@ -13,6 +15,8 @@ export const MainPage = () => {
       </div>
       <UserOption />
       <FoodSlider />
+      <FoodDisplay/>
+      <WebDetails/>
     </div>
   );
 };
