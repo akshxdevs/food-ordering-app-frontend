@@ -5,6 +5,8 @@ import { AdminLogin } from './Components/Admin/AdminLogin';
 import { AdminSignup } from './Components/Admin/AdminSignup';
 import { MainPage } from "./Components/MainpageContent/MainPage";
 import { AdminPage } from "./Components/Admin/AdminPage";
+import { ResPage } from "./Components/RestaurentPageContent/ResPage";
+
 
 function App() {
 
@@ -13,11 +15,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/userlogin" element={<Login/>}/>
+          <Route path="/usersignup" element={<Signup/>}/>
           <Route path="/adminlogin" element={<AdminLogin/>}/>
           <Route path="/adminsignup" element={<AdminSignup/>}/>
           <Route path="/adminpage" element={<AdminPage/>}/>
+          <Route path="/respage" element={<ResPage/>}/>
+
         </Routes>
       </Router>
     </div>

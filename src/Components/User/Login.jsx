@@ -31,7 +31,7 @@ export const Login = () => {
                 localStorage.setItem("userId", userId);
                 localStorage.setItem("username", data.user.name);
                 localStorage.setItem("token", data.token);
-                navigate('/usertodos');
+                navigate('/');
             } else {
                 toast.error("Login failed: " + data.error); 
             }

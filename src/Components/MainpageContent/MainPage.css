@@ -6,7 +6,6 @@ body, h4, h5 {
     font-family: 'Cairo', sans-serif; 
 }
 
-/* Container for the background image */
 .hole-container {
     background-image: url('../../assets/pngtree-variety-of-indian-food-in-front-of-a-dark-wooden-table-image_2930880.jpg');
     background-size: cover;
@@ -124,21 +123,15 @@ body, h4, h5 {
 }
 
 .swiper-button-prev {
-    position: absolute;
-    padding: 560px 0px;
-    left: 200px;
-    transform: translateX(-50%); 
-    z-index: 10;
+    padding: 490px 50px;
+
 }
 .swiper-button-next {
-    position: absolute;
-    right: 13%;
-    padding: 560px 0px;
-    transform: translateX(-50%); 
-    z-index: 10; 
+    padding: 490px 50px;
+
   }
   
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     .swiper-button-prev {
         right: 13%;
     } 
@@ -163,7 +156,7 @@ body, h4, h5 {
     .swiper-button-next {
         left: 70%; 
     }
-  }
+  } */
   
 
 .slider-title {
@@ -187,7 +180,7 @@ body, h4, h5 {
     justify-content: space-around; 
     padding: 30px 20px 0px;
 }
-.card-container div {
+.card-container div {   
     background-color: #fff; 
     border: 1px solid #ddd; 
     border-radius: 30px; 
@@ -335,4 +328,50 @@ body, h4, h5 {
     .res-rating, .res-info {
         font-size: 0.85em;
     }
+}
+
+/* web details */
+
+.wd-main-container{
+    padding: 50px 0px;
+}
+
+.wd-main-container ul{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.wd-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 250px;
+    border: 0.1px solid #c7c4c4;
+    align-items: center;
+    background-color: rgb(219, 232, 239);
+
+}
+
+.wd-wrapper h2 {
+    width: 39%;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.wd-wrapper img{
+}
+
+.sub-container-2{
+    background-color: #000;
+    padding: 1px ;
+
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: column; 
+}
+.aboutus-wrapper{
+ 
 }

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Signup = () => {
-    const [name, setName] = useState("");
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");  
     const [showError, setShowError] = useState(false);  
@@ -13,38 +13,44 @@ export const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!email || !password || !name) {  
+        if (!email || !password || !username) {  
             setShowError(true);
             return; 
         }
         try {
             const res = await axios.post("http://localhost:3000/signup", {
-                name: name,
-                email: email,
-                password: password  
+                username,
+                email,
+                password  
             });
-            const data = res.data;
-            if (res.status === 200) {  
-                const userId = data.user._id;
-                toast.success(`Welcome ${data.name}`);
-                localStorage.setItem("userId", userId);
-                localStorage.setItem("username", data.name);
-                localStorage.setItem("token", data.token);
-                navigate('/usertodos');
-            } else {
-                toast.error("Signup failed: " + data.error);  
-            }
+            toast.success('Signup Successful');
+            navigate('/userlogin');
         } catch (error) {
-            toast.error("An error occurred during signup: " + error.toString()); 
+            toast.error("ERROR!!"); 
         }
     };
 
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
-                <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />  {/* Changed to email type */}
-                <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />  {/* Changed to password type */}
+                <input 
+                    type="text" 
+                    placeholder="Username" 
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)} 
+                />
+                <input 
+                    type="email" 
+                    placeholder="Email" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)} 
+                /> 
+                <input 
+                    type="password" 
+                    placeholder="Password" 
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)} 
+                />  
                 <button type="submit">Signup</button>
             </form>
             {showError && (
